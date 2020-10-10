@@ -1,4 +1,4 @@
-package com.ang.oauth.core.base;
+package com.ang.oauth.core.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
