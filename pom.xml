@@ -19,6 +19,7 @@
 	</properties>
 
 	<dependencies>
+		<!--TODO 方式一:-->
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
 			<!--<artifactId>spring-boot-starter-security</artifactId>-->
@@ -29,6 +30,7 @@
 		<!--<version>2.0.14.RELEASE</version>-->
 		<!--</dependency>-->
 
+		<!--TODO 方式二:对方式一进行封装操作-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-oauth2</artifactId>
@@ -39,6 +41,23 @@
 			<artifactId>spring-cloud-starter-security</artifactId>
 			<version>2.2.4.RELEASE</version>
 		</dependency>
+
+		<!--TODO 方式三:https://mp.weixin.qq.com/s/xJSyPVRq0EwvTi_TBjCI1g :2018 年 1 月 30 号，官方说要逐渐停止 Spring Security OAuth 开源项目，将 OAuth2 的具体实现，在 Spring Security5.x 中进行重构。换句话说，以后如果想在 Spring 中使用 OAuth2，直接引入 Spring Security 依赖就行了，无需再额外引入 OAuth2 依赖。-->
+		<!--<dependency>-->
+		<!--<groupId>org.springframework.boot</groupId>-->
+		<!--<artifactId>spring-boot-starter-security</artifactId>-->
+		<!--</dependency>-->
+
+		<!--TODO 方式四:实现和三效果-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-oauth2-client</artifactId>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>-->
+		<!--</dependency>-->
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
